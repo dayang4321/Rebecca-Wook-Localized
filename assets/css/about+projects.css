@@ -1,0 +1,250 @@
+/* About and Project Sections Styles are set here */
+
+/* Intro Cards */
+.intro-cards-row{
+    justify-content: center;
+    margin-top: -71px;
+}
+
+.intro-card{
+    width: 288px;
+    background-color: #F2F4F7;;
+    text-align: center;
+    box-shadow: 1px 2px 9px rgba(55, 20, 153, 0.1);
+    border-radius: 8px;
+    margin: 3px 1.5px ;
+}
+
+.intro-card-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 8px;
+}
+/* Intro Cards responsiveness */
+@media (max-width:1199px){
+    
+    .intro-card{
+        width: 250px;
+        margin: 3px 1.5px ;
+    }
+    }
+    
+    @media (max-width:1010px){
+        .intro-card{
+            width: 230px;
+            margin: 3px 1.5px ;
+        }
+    }
+
+    @media (max-width:950px){
+        .intro-card{
+            width: 215px;
+            margin: 3px 1.5px ;
+        }
+    
+    }
+    
+    @media (max-width:875px){
+        .intro-card{
+            width: 288px;
+            margin: 3px 1.5px ;
+        }
+        
+    }
+
+
+/* About Section*/
+.about-me-title{
+    line-height: 48px;
+    color: var(--dark-color);
+    font-weight: bold;
+}
+
+.about-me-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Skills Cards */
+.about-cards-row{
+    justify-content: center;
+}
+
+.about-card{
+    width: 237px;
+    background-color: #F2F4F7;;
+    text-align: center;
+    box-shadow: 1px 2px 4px rgba(25, 61, 115, 0.1);
+    border-radius: 8px;
+    margin: 0px 40px ;
+}
+
+/* Stats Block */
+.stats-row{
+    background-color: var(--dark-color);
+    color:  var(--light-color);
+    justify-content: center;
+}
+
+.stat-block{
+    text-align: center;
+    margin: 0px 90px;
+    text-align: center;
+}
+
+.stat-circle{
+    vertical-align: middle;
+    background-color: var(--light-color);
+    color:  var(--dark-color);
+    height: 68px;
+    width: 68px;
+    line-height: 68px;
+    border-radius: 50%;
+    margin: 0 auto 32px;
+    font-weight: 600;
+}
+
+/* Clients Logo Image */
+.companies-logo-block img{
+    width:100%
+}
+
+/* Skills Cards and Stat Block Responsiveness */
+@media (max-width:1300px){
+
+    .about-card{
+        margin: 0px 30px ;
+    }
+}
+
+@media (max-width:1199px){
+
+    .about-card{
+        margin: 0px 15px ;
+        width: 200px;
+    }
+
+    .stat-block{
+        text-align: center;
+        margin: 0px 50px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width:950px){
+
+    .about-card{
+        margin: 0px 40px ;
+        width: 230px;
+    } 
+}
+
+@media (max-width:870px){
+
+    .stat-block{
+        text-align: center;
+        margin: 0px 90px;
+        text-align: center;
+    }
+}
+
+@media (max-width:768px){
+
+    .stat-circle{
+        margin: 0 auto 14px;
+    }
+    .projects-row{
+        margin-top: 20px;
+    }
+    
+}
+
+@media (max-width:576px){
+
+    .companies-logo-block img{
+        width:30%
+    }
+  
+}
+
+
+
+/* Projects Section */
+.projects-intro{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.projects-row {
+    margin-top: -60px;
+}
+
+.project-card{
+    background: #F2F4F7;
+    box-shadow: 1px 2px 9px rgba(55, 20, 153, 0.1);
+    border-radius: 8px;
+    max-width: 288px!important;
+    text-align: center;
+    margin: 12px 2.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.project-card img{
+    padding-bottom: 24px;
+}
+
+.project-card a{
+    color: var(--dark-color);
+    text-decoration: underline;
+}
+
+.mongolab-link{
+    color: #F7941D!important;
+}
+.protonet-link{
+    color:#E15B29!important;
+}
+
+/* Project Cards responsiveness */
+@media (max-width:1199px){
+    .project-card{
+        width: 250px;
+        margin: 3px 1.5px ;
+    }
+    }
+    
+    @media (max-width:1010px){
+        .project-card{
+            width: 230px;
+            margin: 3px 1.5px ;
+        }
+    }
+
+    @media (max-width:950px){
+        .project-card {
+            width: 215px;
+            margin: 3px 1.5px ;
+        }
+    }
+    
+    @media (max-width:875px){
+        .project-card {
+            width: 288px;
+            margin: 3px 1.5px ;
+        }
+    }
+
+    
+    @media (max-width:768px){    
+        .projects-row {
+            margin-top: 20px;
+        }
+    }
+

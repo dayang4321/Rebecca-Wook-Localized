@@ -1,0 +1,50 @@
+/* Twstimonial, Contact and Footer Sections Styles are set here */
+
+/* Testimonial Section */
+.testimonial-card{
+    color: #F2F4F7;
+    background-color: var(--dark-color);
+    border-radius: 8px;
+}
+
+.testimonial-card img{
+    float: left;
+}
+
+.testimonial-head{
+    font-weight: 500;
+}
+
+.testimonial-head span{
+    font-weight: 600;
+}
+
+.testimonial-body span{
+    font-weight: 600;
+    font-size: 32px; 
+    color: #E43A19;
+    position: absolute;
+    z-index: 2;   
+}
+
+.testimonial-body span:first-of-type{
+    transform: translateY(-17px)
+}
+.testimonial-body span:last-of-type{
+    transform: translateY(-2px)
+}
+
+/* Social Icons */
+.social-icon {
+    font-size: 24px;
+}
+
+
+/* Footer Section */
+.footer{
+    background-color: var(--dark-color);
+    color:  var(--light-color); 
+    font-size: 12px;
+    line-height: 18px;
+}
+

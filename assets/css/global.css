@@ -1,0 +1,105 @@
+/* Global Styles (styles that affect the entire document) are set here */
+
+/* Poppins Google Font */
+@import url('../fonts/poppins.css');
+
+/* Default Variables */
+:root{
+    --dark-color: #222831;
+    --primary-color: #00ADB5;
+    --secondary-color: #1C162B;
+    --light-color: #EEEEEE; 
+
+    --main-font-family: 'Poppins', sans-serif;
+
+    --h1-font-size: 48px;
+    --h2-font-size: 40px;
+    --h3-font-size: 32px;
+    --sub-heading-font-size: 24px;
+    --body-text-font-size: 16px;
+    --small-text-font-size: 8px;
+}
+
+html{
+    scroll-behavior: smooth!important;
+}
+
+body {  
+    background-color: #E5E5E5;
+    font-family: var(--main-font-family);
+    color:  var(--dark-color);
+    position: relative;
+    font-size: var(--body-text-font-size);
+}
+
+/* Headings Global*/
+
+h1 {
+    font-size: var(--h1-font-size);
+}
+h2 {
+    font-size: var(--h2-font-size);
+}
+h3 {
+    font-size: var(--h3-font-size);
+}
+h4 {
+    font-size: var(--sub-heading-font-size);
+}
+
+.heading{
+    font-weight: bold;
+}
+
+/* Underline  Effect */
+.heading span {
+    display: inline-block;
+    border-bottom: 8px solid  var(--primary-color);
+    box-sizing: border-box;
+    height: 40px;
+    border-radius: 4px;
+}
+
+/* Form Inputs */
+.form-control{
+    background-color: transparent!important;
+}
+
+/* Buttons Global */
+
+.btn {
+    text-transform: capitalize;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color)!important;
+    border-color: var(--primary-color)!important;;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active {
+    color: var(--primary-color)!important;  
+    border-color: var(--primary-color)!important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
+    color: var(--primary-color)!important;
+    border-color: var(--primary-color)!important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color)!important;
+}
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: var(--primary-color)!important;
+}
+
+.btn-mid {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+

@@ -1,0 +1,143 @@
+/* NavBar and Home Styles are set here */
+
+.navbar{
+    box-shadow: none!important;
+}
+
+.navbar .nav-link{
+    color: var(--light-color)!important;
+}
+
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link:active,
+.navbar .nav-item .nav-link.active
+{
+    color: var(--primary-color)!important;
+}
+
+/* On Page Scroll */
+.top-nav-collapse {
+    background-color:var(--dark-color)!important;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+/* Nav Toggle Button */
+.bar {
+    background: var(--primary-color);
+    display: inline-block;
+    width: 25px;
+    height: 3px;
+    position: relative;
+    margin-bottom: 0.3rem;
+    transition: 0.3s ease;
+  }
+  
+  .bar::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: -8px;
+    height: 3px;
+    background: var(--primary-color);
+    left: 0;
+  }
+  
+  .bar::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 8px;
+    height: 3px;
+    background: var(--primary-color);
+    left: 0;
+  }
+  
+  .navbar-toggler[aria-expanded='true'] .bar {
+    background: transparent;
+  }
+  
+  .navbar-toggler[aria-expanded='true'] .bar::before {
+    transform: rotate(45deg) translateY(11px);
+  }
+  
+  .navbar-toggler[aria-expanded='true'] .bar::after {
+    transform: rotate(-45deg) translateY(-12px);
+  }
+
+  .navbar-toggler[aria-expanded='true'] .navbar {
+    max-height: 700px;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+/* Large Screens */
+@media (max-width:992px) {
+    .navbar .btn-mid{
+         font-size: 12px;    
+         line-height: 16px;
+         padding: 8px 20px!important;
+ }
+ }
+
+
+/* Medium Screens */
+@media (max-width:768px){
+
+    /* On Navbar Expand */
+    #home-navbar.nav-expanded{
+        height:100vh !important;
+        max-height: 700px! important;
+        background-color: #E5E5E5!important;
+        display: block;       
+    }
+
+    #home-navbar.nav-expanded .nav-link{
+        font-size: 24px !important;
+        line-height: 28px !important;
+        color: var(--dark-color) !important;
+    }
+
+    .logo-button{
+        width: 100%;
+    }
+
+     #home-navbar.nav-expanded .nav-link.active,
+     #home-navbar.nav-expanded .nav-link:active {
+        color: var(--primary-color) !important;
+     }
+
+     #home-navbar.nav-expanded .btn-mid{
+        font-size: 16px;
+        line-height: 24px;
+        width: 300px;
+        max-width: 95%;
+}
+}
+
+
+/* Home Styles */
+
+.home-container {
+    height: 720px;
+    background-color:var(--dark-color);   
+}
+
+.home-intro {
+    color:var(--light-color);
+}
+
+/* Medium Screens */
+@media (max-width:768px){
+ 
+    .home-cards-row{
+        margin-top: 20px;
+    }
+    .home-container{
+       min-height: 650px;
+       height: 80vh;
+}
+    .home-card{
+        margin: 8px 1.5px;
+    }
+}
