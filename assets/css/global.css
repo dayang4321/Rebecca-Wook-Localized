@@ -32,6 +32,9 @@ body {
     font-size: var(--body-text-font-size);
 }
 
+.wow {
+    visibility: hidden;
+  }
 /* Headings Global*/
 
 h1 {

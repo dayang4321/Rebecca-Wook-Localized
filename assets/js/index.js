@@ -26,3 +26,31 @@ $(window).resize(function () {
        }
 )
 
+$(window).scroll(function() {
+    var hT = $('#stats-row').offset().top,
+        hH = $('#stats-row').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+    if (wS > (hT+hH-wH)){
+        console.log('H1 on the view!');
+        if ($('#stats-row').hasClass('counter-ran')) {
+            return
+        }
+        else {
+            console.log('counter on the view!');
+            $('#stats-row').addClass('counter-ran');
+            $('.stat').each(function () {
+                $(this).prop('Counter',0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 5000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+        }
+        ;
+    }
+ });
